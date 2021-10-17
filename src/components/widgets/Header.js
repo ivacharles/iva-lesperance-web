@@ -6,7 +6,7 @@ import { RiDiscordLine } from "react-icons/ri";
 
 function Header() {
   return (
-          <Container className="bg-secondary py-0" >
+          <Container className="bg-secondary py-0 " >
               <Navbar className="p-0">
                   <Container className="justify-content-end ">
                       <Nav activeKey="/home">

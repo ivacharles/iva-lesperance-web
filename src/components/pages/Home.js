@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../widgets/Header';
-import { Button, Image, Stack, Row, Navbar, Nav, Container, Figure, Col } from 'react-bootstrap';
+import { Button, Image, Row, Container, Col } from 'react-bootstrap';
 import ivaPict from '../picts/ivaPict.jpg';
 import Footer from '../widgets/Footer';
-import { SiHtml5, SiCss3, SiWordpress, SiReact, SiSpeedtest,SiAzuredevops, SiCsharp, SiJava, SiSpring, SiExpress} from "react-icons/si";
+import { SiWordpress, SiReact, SiSpeedtest,SiAzuredevops, SiCsharp, SiJava, SiSpring, SiExpress} from "react-icons/si";
 import { DiJavascript1, DiJqueryLogo} from "react-icons/di";
 import { IoLogoNodejs } from "react-icons/io";
 import { RiHtml5Line, RiDatabase2Line, RiCss3Fill,RiFlutterLine } from "react-icons/ri";
 import { CgCPlusPlus } from "react-icons/cg";
-import { MdOutlineWebAsset, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdOutlineWebAsset } from "react-icons/md";
 import {NavLink} from "react-router-dom";
 
 
@@ -25,16 +25,16 @@ function Home() {
 
   function HomeShowcase(){
       return(
-        <Container className="p-md-5 bg-light " >
+        <Container className="p-md-5 bg-secondary bg-opacity-25 " >
             <Row className="p-md-5  justify-content-sm-center  mb-3">
                 <Col xs={8} sm={8} md={5} lg={4}  xl={3} className="mb-3 ">
                 <Image src={ivaPict} thumbnail />
                 </Col >
                 <Col md={12} lg={8} xl={8} className="mb-3" >
-                <h6>Hi, my name is</h6>
-                <h5> Iva Lesperance Charles</h5>
-                <p> I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I am proficient in various backend technologies such as C++, C#, Java, Spring Framework, and Flutter. For front end, I use React.js, Javascript, Node.js, jQuery, CSS, HTML. Want to know how I may help your project? Check out <NavLink className="nav-link"   to="/projects" className="text-reset">my project case studies</NavLink> and <NavLink className="nav-link"   to="/resume" className="text-reset">resume.</NavLink></p>
-                <Button className=" border" variant="secondary">Hire me</Button>
+                <h6>Hey There! Glad you're here</h6>
+                <h5> My name is Iva Lesperance Charles</h5>
+                <p>Welcome to my website. I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I am proficient in various backend technologies such as C++, C#, Java, Spring Framework, and Flutter. For front end, I use React.js, Javascript, Node.js, jQuery, CSS, HTML. Want to know how I may help your project? Check out <NavLink className="nav-link"   to="/projects" className="text-reset">my project case studies</NavLink> and <NavLink className="nav-link"   to="/resume" className="text-reset">resume.</NavLink></p>
+                <NavLink className="btn btn-secondary"   to="/contact" >Hire me</NavLink>
             </Col>
             </Row>
         </Container>
@@ -42,11 +42,11 @@ function Home() {
   }
   function ShowSkills() {
     return(
-        <Container className=" border py-5">
+        <Container className="py-5 bg-light">
             <Row className="mx-auto">
                 <Row className=" text-center ">
                     <h5>Skills Overview</h5>
-                    <p >I have more than few years' experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p>
+                    {/* <p >I have more than few years' experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p> */}
                 </Row>
                 <Row xs={1}  sm={1} md={1} lg={4} xl={4} className="mx-auto justify-content-evenly g-5">
                     <Card2ShowFrontendSkill />
@@ -60,8 +60,8 @@ function Home() {
 
 function Card2ShowFrontendSkill(props) {
     return (
-        <Container className="py-5 bg-light position-relative mx-3">
-            <Row variant="" className="bg-primary text-white position-absolute top-0 start-50 translate-middle">
+        <Container className="py-5 bg-white border position-relative mx-3">
+            <Row variant="" className="bg-secondary text-white position-absolute top-0 start-50 translate-middle">
                 <h4>Frontend</h4>
             </Row>
             <Row className="mx-md-stat">
@@ -120,8 +120,8 @@ function Card2ShowFrontendSkill(props) {
 
 function Card2ShowBackendSkill(props) {
     return (
-        <Container className="py-5 bg-light position-relative  mx-3">
-            <Row variant="" className="bg-primary text-white position-absolute top-0 start-50 translate-middle">
+        <Container className="py-5 bg-white border position-relative  mx-3">
+            <Row variant="" className="bg-secondary text-white position-absolute top-0 start-50 translate-middle">
                 <h4>Backend</h4>
             </Row>
             <Row className="mx-md-stat">
@@ -180,8 +180,8 @@ function Card2ShowBackendSkill(props) {
 
   function Card2ShowOtherSkill(props) {
     return (
-        <Container className="py-5 bg-light position-relative mx-3">
-            <Row variant="" className="bg-primary text-white position-absolute top-0 start-50 translate-middle">
+        <Container className="py-5 bg-white border position-relative mx-3">
+            <Row variant="" className="bg-secondary text-white position-absolute top-0 start-50 translate-middle">
                 <h4>Others</h4>
             </Row>
             <Row className="mx-md-stat">
