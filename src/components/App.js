@@ -6,6 +6,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home'
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import Services from './pages/Services';
+import './css/app.css';
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/services">
+            <Services />
           </Route>
           <Route path="/projects">
             <Projects />

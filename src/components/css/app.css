@@ -1,4 +1,5 @@
-  /* At the top level of your code */
-  /* @media screen and (min-device-width: 400px) and (max-device-width: 750px) and (orientation:landscape) {
+/* set a temp height for empty containers */
 
-  } */
+.temp-height{
+  min-height: 500px;
+}

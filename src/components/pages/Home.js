@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../widgets/Header';
-import { Button, Image, Row, Container, Col } from 'react-bootstrap';
+import { Image, Row, Container, Col } from 'react-bootstrap';
 import ivaPict from '../picts/ivaPict.jpg';
 import Footer from '../widgets/Footer';
-import { SiWordpress, SiReact, SiSpeedtest,SiAzuredevops, SiCsharp, SiJava, SiSpring, SiExpress} from "react-icons/si";
+import { SiWordpress,SiSwagger,SiPostman,SiInsomnia, SiPostgresql, SiReact,SiSequelize, SiSpeedtest,SiAzuredevops, SiCsharp, SiJava, SiSpring,SiBootstrap, SiExpress} from "react-icons/si";
 import { DiJavascript1, DiJqueryLogo} from "react-icons/di";
 import { IoLogoNodejs } from "react-icons/io";
-import { RiHtml5Line, RiDatabase2Line, RiCss3Fill,RiFlutterLine } from "react-icons/ri";
-import { CgCPlusPlus } from "react-icons/cg";
+import { RiCodeLine, RiHtml5Line,RiGithubLine, RiDatabase2Line, RiCss3Fill,RiFlutterLine } from "react-icons/ri";
 import { MdOutlineWebAsset } from "react-icons/md";
+import { FaGitAlt } from "react-icons/fa";
 import {NavLink} from "react-router-dom";
 
 
@@ -33,7 +33,7 @@ function Home() {
                 <Col md={12} lg={8} xl={8} className="mb-3" >
                 <h6>Hey There! Glad you're here</h6>
                 <h5> My name is Iva Lesperance Charles</h5>
-                <p>Welcome to my website. I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I am proficient in various backend technologies such as C++, C#, Java, Spring Framework, and Flutter. For front end, I use React.js, Javascript, Node.js, jQuery, CSS, HTML. Want to know how I may help your project? Check out <NavLink className="nav-link"   to="/projects" className="text-reset">my project case studies</NavLink> and <NavLink className="nav-link"   to="/resume" className="text-reset">resume.</NavLink></p>
+                <p>Welcome to my website. I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I am proficient in various backend technologies such as C#, Java, Spring Framework, and Express.js. For front end, I use React.js, Flutter, Javascript, Node.js, jQuery, CSS, HTML. Want to know how I may help your project? Check out <NavLink className="nav-link"   to="/projects" className="text-reset">my project case studies</NavLink> and <NavLink className="nav-link"   to="/resume" className="text-reset">resume.</NavLink></p>
                 <NavLink className="btn btn-secondary"   to="/contact" >Hire me</NavLink>
             </Col>
             </Row>
@@ -44,10 +44,7 @@ function Home() {
     return(
         <Container className="py-5 bg-light">
             <Row className="mx-auto">
-                <Row className=" text-center ">
-                    <h5>Skills Overview</h5>
-                    {/* <p >I have more than few years' experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p> */}
-                </Row>
+                    <h4 className=" text-center my-0">Skills Overview</h4>
                 <Row xs={1}  sm={1} md={1} lg={4} xl={4} className="mx-auto justify-content-evenly g-5">
                     <Card2ShowFrontendSkill />
                     <Card2ShowBackendSkill />
@@ -91,10 +88,26 @@ function Card2ShowFrontendSkill(props) {
                 </Row>
                 <Row>
                     <Col xs={1} md={1} lg={2}>
+                        <RiFlutterLine />
+                    </Col>
+                    <Col>
+                        <h5>  Flutter</h5>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        <SiBootstrap />
+                    </Col>
+                    <Col>
+                        <h5>Bootstrap</h5>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
                         <DiJqueryLogo />
                     </Col>
                     <Col>
-                        <h5>  jQuery</h5>
+                        <h5>jQuery</h5>
                     </Col>
                 </Row>
                 <Row>
@@ -110,7 +123,7 @@ function Card2ShowFrontendSkill(props) {
                         <RiCss3Fill />
                     </Col>
                     <Col>
-                        <h5>  CSS/SASS </h5>
+                        <h5> CSS/SASS </h5>
                     </Col>
                 </Row>
             </Row>
@@ -127,14 +140,6 @@ function Card2ShowBackendSkill(props) {
             <Row className="mx-md-stat">
                 <Row>
                     <Col xs={1} md={1} lg={2}>
-                        <CgCPlusPlus />
-                    </Col>
-                    <Col>
-                        <h5>  C++</h5>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={1} md={1} lg={2}>
                         <SiCsharp />
                     </Col>
                     <Col>
@@ -149,14 +154,7 @@ function Card2ShowBackendSkill(props) {
                         <h5>  Java</h5>
                     </Col>
                 </Row>
-                <Row>
-                    <Col xs={1} md={1} lg={2}>
-                        <RiFlutterLine />
-                    </Col>
-                    <Col>
-                        <h5>  Flutter</h5>
-                    </Col>
-                </Row>
+               
                 <Row>
                     <Col xs={1} md={1} lg={2}>
                         <SiSpring />
@@ -171,6 +169,38 @@ function Card2ShowBackendSkill(props) {
                     </Col>
                     <Col>
                         <h5>  Express.js</h5>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        <SiSequelize />
+                    </Col>
+                    <Col>
+                        <h5>  Sequelize.js</h5>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        <RiDatabase2Line />
+                    </Col>
+                    <Col>
+                        <h5> MySQL </h5>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        <SiPostgresql />
+                    </Col>
+                    <Col>
+                        <h5>  Postgresql </h5>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        <SiWordpress />
+                    </Col>
+                    <Col>
+                        <h5>  Wordpress</h5>
                     </Col>
                 </Row>
             </Row>
@@ -190,9 +220,17 @@ function Card2ShowBackendSkill(props) {
                         <SiAzuredevops />
                     </Col>
                     <Col>
-                        <h5>  DevOps</h5>
+                        <h5>DevOps</h5>
                     </Col>
                 </Row>
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        < FaGitAlt />
+                    </Col>
+                    <Col>
+                        <h5>Git</h5>
+                    </Col>
+                </Row>   
                 <Row>
                     <Col xs={1} md={1} lg={2}>
                         <SiSpeedtest />
@@ -208,31 +246,40 @@ function Card2ShowBackendSkill(props) {
                     <Col>
                         <h5>  Archibus</h5>
                     </Col>
+                </Row>                
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        <SiInsomnia />
+                    </Col>
+                    <Col>
+                        <h5>Insomnia</h5>
+                    </Col>
+                </Row>     
+                <Row>
+                    <Col xs={1} md={1} lg={2}>
+                        <SiPostman />
+                    </Col>
+                    <Col>
+                        <h5>Postman</h5>
+                    </Col>
                 </Row>
                 <Row>
                     <Col xs={1} md={1} lg={2}>
-                        <SiWordpress />
+                        <SiSwagger />
                     </Col>
                     <Col>
-                        <h5>  Wordpress</h5>
+                        <h5>Swagger</h5>
                     </Col>
-                </Row>
+                </Row>        
                 <Row>
                     <Col xs={1} md={1} lg={2}>
-                        <RiDatabase2Line />
+                        <RiCodeLine />
                     </Col>
                     <Col>
-                        <h5> MySQL </h5>
+                        <h5>VS Code / Intellij</h5>
                     </Col>
-                </Row>
-                <Row>
-                    <Col xs={1} md={1} lg={2}>
-                        <RiDatabase2Line />
-                    </Col>
-                    <Col>
-                        <h5>  MsSQL </h5>
-                    </Col>
-                </Row>
+                </Row>     
+                
             </Row>
         </Container>
     );

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Row} from 'react-bootstrap';
+import { Container, } from 'react-bootstrap';
 import Header from '../widgets/Header';
 import Footer from '../widgets/Footer';
 import { FaLaptopCode } from "react-icons/fa";
 
 
-function Blog() {
+function Services() {
     return (
         <Container fluid="md">
             <Header />
@@ -18,4 +18,4 @@ function Blog() {
     );
   }
 
-  export default Blog;
+  export default Services;
