@@ -12,7 +12,7 @@ function ContactForm() {
     const {
         register,
         handleSubmit,
-        formState: { errors, isDirty, isValid },
+        formState: { errors },
       } = useForm();
 
       const onSubmit = (data, event) => {
@@ -24,7 +24,7 @@ function ContactForm() {
             || Object.keys(email).length ===0 
             || Object.keys(subj).length ===0 
             || Object.keys(message).length ===0 ){
-                alert("all fields are requiered");
+                // alert("all fields are requiered");
                 setMsg(false);
             }
             if(Object.keys(name).length !==0
@@ -41,7 +41,7 @@ function ContactForm() {
         emailjs.sendForm(KEY_S, KEY_T, e.target, KEY_U)
           .then((result) => {
                 setMsg(true);
-                alert("Email was sent successfully")
+                // alert("Email was sent successfully")
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
@@ -53,7 +53,7 @@ function ContactForm() {
     return (
         <Container  className="mx-center temp-height p-md-5 bg-secondary bg-opacity-25">
             <h2 className="text-center">Contact me</h2>
-            {/* {msg?<p className="text-success text-center">Email was sent successfully</p>:<p className="text-danger text-center">all fiesld are requiered</p>} */}
+            {msg?<p className="text-success text-center">Email was sent successfully</p>:<p className="text-danger text-center">all fiesld are requiered</p>}
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <Row >
                     <Col  className="">
